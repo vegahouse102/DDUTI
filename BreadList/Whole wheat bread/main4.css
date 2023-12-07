@@ -1,0 +1,33 @@
+.more_Box {
+    padding: 5vw;
+    margin-top: -10vw;
+}
+
+.more_information {
+    max-width: 100%;
+    color: #BD8A00;
+    padding: 1.5vw;
+    font-size: 15pt;
+    font-family: 'OTFPro2';
+    padding-left: 2.2vw;
+    margin-bottom: 5vw;
+}
+
+.more_information_detail {
+    max-width: 100%;
+    color: black;
+    margin-top: -1px;
+    font-size: 11pt;
+    font-family: 'OTFPro2';
+    line-height: 1.5;
+    margin-bottom: 5vw;
+    font-weight: normal;
+}
+
+.end_lock {
+    text-align: center;
+    max-width: 100%;
+    max-height: 45%;
+    padding: 0.5rem;
+    background-color: rgba(0,0,0,1);
+}

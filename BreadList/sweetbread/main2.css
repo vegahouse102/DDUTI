@@ -1,0 +1,66 @@
+.bread-imformation {
+    padding: 5vw;
+}
+.bread-name {
+    font-family: 'OTFPro1';
+    font-weight: bold;
+    color: #BD8A00;
+    font-size: 32pt;
+    margin-bottom: 5vw;
+}
+.bread-description {
+    color: black;
+    font-size: 11pt;
+    font-family: 'OTFPro2';
+    border-bottom: 1px solid rgba(0,0,0,1);
+    padding-bottom: 4vw;
+    font-family: 'preten-Medium';
+    line-height: 1.5;
+}
+.bread-price {
+    color: black;
+    font-size: 22pt;
+    margin-top: 1.5vw;
+    font-family: 'OTRPro2';
+    font-weight: bold;
+    color: #BD8A00;
+    border-top: 1px solid rgba(0,0,0,1);
+    padding-top: 2vw;
+}
+.bread-detail {
+    display: flex;
+    margin-top: 2vw;
+    color: rgba(0, 0, 0, 0.9);
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+}
+.detail-left-border {
+    width: 25%;
+    border-right: 1px solid gray;
+}
+.detail-left {
+    width: 100%;
+    padding-top:5vw;
+    padding-bottom: 2vw;
+}
+.detail-right {
+    width: 75%;
+    padding-top:5vw;
+    padding-bottom: 2vw;
+    padding-left: 4vw;
+}
+.detail-left-font {
+    font-weight: bold;
+    margin-bottom: 1.5vw;
+    font-family: 'OTFPro2';
+    font-size: 11pt;
+}
+.detail-right-font {
+    margin-bottom: 1.5vw;
+    font-family: 'OTFPro2';
+    font-size: 11pt;
+}
+.detail-border {
+    border-top: 1px solid gray;
+    margin-top: 1.5vw;
+}
