@@ -1,4 +1,4 @@
-const images = ["../../imageFile/echo.jpg", "../../imageFile/echo.jpg"];
+const images = ["../../imageFile/bomunsan_echo.jpg", "../../imageFile/bomunsan_echo.jpg"];
 let currentImageIndex = 0;
 
 function showImage(index) {
@@ -27,6 +27,6 @@ showImage(currentImageIndex);
 
 const ImgElement = document.querySelector('.end_lock');
 
-ImgElement.addEventListener('click', function() {
+ImgElement.addEventListener('click', function () {
     window.location.href = '../../Bread/main.html';
 });
