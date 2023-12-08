@@ -1,4 +1,4 @@
-const images = ["../../imageFile/Mozzimozzi Bread.jpg", "../../imageFile/Mozzimozzi Brea_2.jpg"];
+const images = ["../../imageFile/Mozzimozzi Bread.jpg", "../../imageFile/Mozzimozzi Bread_2.jpg"];
 let currentImageIndex = 0;
 
 function showImage(index) {

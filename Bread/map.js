@@ -443,7 +443,7 @@ function Black_Phrase(m_window) {
 
     setTimeout(() => {
         black_Div.remove();
-    }, 3000);
+    }, 1500);
 }
 
 // in_Class 텍스트 설정
