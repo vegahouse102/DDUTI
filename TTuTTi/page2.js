@@ -97,7 +97,7 @@ function Window_Third_MediaClass(m_window) {
     videoElement.setAttribute('controls', true);
 
     // JavaScript로 비디오 크기 설정
-    videoElement.style.width = '95vw';
+    videoElement.style.width = '100vw';
     videoElement.style.height = '60vh';
 
     // div에 video 태그 추가
