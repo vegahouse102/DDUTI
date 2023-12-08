@@ -26,7 +26,12 @@ showImage(currentImageIndex);
 
 
 const ImgElement = document.querySelector('.end_lock');
+const EndPhrase = document.querySelector('.end_phrase');
 
-ImgElement.addEventListener('click', function () {
+// 메인 홈페이지 이동
+EndPhrase.addEventListener('click', function () {
     window.location.href = '../../Bread/main.html';
+
+    EndPhrase.style.backgroundColor = 'black';
+    EndPhrase.style.color = 'white';
 });

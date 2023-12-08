@@ -23,11 +23,38 @@
     margin-bottom: 5vw;
     font-weight: normal;
 }
-
 .end_lock {
     text-align: center;
-    max-width: 100%;
-    max-height: 45%;
-    padding: 0.5rem;
-    background-color: rgba(0,0,0,1);
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+
+    /* 새로 추가 */
+    display: flex;
+    flex-direction: column;
+
+}
+.end_image {
+    background-color: black;
+    width: 100vw;
+    height: 6vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.end_image img {
+    width: 20%;
+    height: 60%;
+}
+
+.end_phrase {
+    font-family: 'OTFPro2';
+    border: 0.2vh solid black;
+    border-radius: 40px;
+    font-size: 15pt;
+    padding: 2vw;
+    margin-bottom: 3.5vh;
+    margin-top: -2vh;
+    width: 86vw;
 }

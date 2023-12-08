@@ -102,10 +102,10 @@ body {
 
 @font-face {
     font-family: 'OTFPro1';
-    src: url('../../FontFile/OTF/Pro/BareunDotumOTFPro1.otf');
+    src: url('../FontFile/OTF/Pro/BareunDotumOTFPro1.otf');
 }
 
 @font-face {
     font-family: 'OTFPro2';
-    src: url('../../FontFile/OTF/Pro/BareunDotumOTFPro2.otf');
+    src: url('../FontFile/OTF/Pro/BareunDotumOTFPro2.otf');
 }

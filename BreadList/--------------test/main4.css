@@ -6,10 +6,9 @@
 .more_information {
     max-width: 100%;
     color: #BD8A00;
-    padding: 1.5vw;
+
     font-size: 15pt;
     font-family: 'OTFPro2';
-    padding-left: 2.2vw;
     margin-bottom: 5vw;
 }
 
@@ -24,6 +23,7 @@
     font-weight: normal;
 }
 
+/* 수정 부분 */
 .end_lock {
     text-align: center;
     justify-content: center;

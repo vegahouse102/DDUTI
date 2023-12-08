@@ -1,4 +1,4 @@
-const images = ["../../imageFile/soboro.jpg"];
+const images = ["../../imageFile/echo.jpg"];
 let currentImageIndex = 0;
 
 function showImage(index) {
@@ -24,12 +24,12 @@ function updateImageCounter() {
 // 초기 이미지 표시
 showImage(currentImageIndex);
 
-
+// <수정 부분>
 const ImgElement = document.querySelector('.end_lock');
 const EndPhrase = document.querySelector('.end_phrase');
 
 // 메인 홈페이지 이동
-EndPhrase.addEventListener('click', function () {
+EndPhrase.addEventListener('click', function() {
     window.location.href = '../../Bread/main.html';
 
     EndPhrase.style.backgroundColor = 'black';
