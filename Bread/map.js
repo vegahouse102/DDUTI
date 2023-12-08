@@ -43,7 +43,14 @@ const content_BreadImage = {
     TOUCH: "../imageFile/Touch.png",
     CAMERA: "../imageFile/Camera.png"
 };
-
+const bread_qr = {
+    BOMUNSAN:'../imageFile/SungSim_Bomunsan.png',
+    FRIED_SOBORO:'../imageFile/SungSim_Fried_Soboro.png',
+    MOZZIMOZZI_BREAD:'../imageFile/SungSim_Mozzimozzi.png',
+    LEEK_BREAD:'../imageFile/SungSim_Leek.png',
+    PURE_MILK_BREAD:'../imageFile/SungSim_Pure_Milk.png',
+    TUSOGUMA:'../imageFile/SungSim_Tusoguma.png',
+};
 // 배열 넘버링 쉽게 접근하기 위한 열거형 생성
 const bread_Enum = {
     Salt: 0,
@@ -282,9 +289,9 @@ function Window_Setting(infor_win, number) {
                 breadList.push(acceptDiv);
             }
 
-            in_Plus(breadList[0], content_BreadImage.FRIED_SOBORO, '튀김소보로', '1980년 탄생 소보로, 앙금빵, 도넛의 3단 합체빵. 하나의 빵으로 3가지 맛을 즐기실 수 있는성심당 No.1 튀김소보로', '1,700', content_BreadImage.QR_TEST);
-            in_Plus(breadList[1], content_BreadImage.TUSOGUMA, '튀소구마', '튀소35주년을 기념하여 탄생한 튀소 동생. 달콤한 고구마 크림으로 속을 가득 채운 튀소구마', '1,700', content_BreadImage.QR_TEST);
-            in_Plus(breadList[2], content_BreadImage.LEEK_BREAD, '부추빵', '푸릇푸릇 싱싱한 부추를 계란샐러드, 햄과 함께 직접 버무려 만든 부추향 가득 만두 같은 영양만점 판타롱 부추빵', '2,000', content_BreadImage.QR_TEST);
+            in_Plus(breadList[0], content_BreadImage.FRIED_SOBORO, '튀김소보로', '1980년 탄생 소보로, 앙금빵, 도넛의 3단 합체빵. 하나의 빵으로 3가지 맛을 즐기실 수 있는성심당 No.1 튀김소보로', '1,700', bread_qr.FRIED_SOBORO);
+            in_Plus(breadList[1], content_BreadImage.TUSOGUMA, '튀소구마', '튀소35주년을 기념하여 탄생한 튀소 동생. 달콤한 고구마 크림으로 속을 가득 채운 튀소구마', '1,700', bread_qr.TUSOGUMA);
+            in_Plus(breadList[2], content_BreadImage.LEEK_BREAD, '부추빵', '푸릇푸릇 싱싱한 부추를 계란샐러드, 햄과 함께 직접 버무려 만든 부추향 가득 만두 같은 영양만점 판타롱 부추빵', '2,000', bread_qr.LEEK_BREAD);
             break;
         
         case bread_Enum.Bread:
@@ -294,8 +301,8 @@ function Window_Setting(infor_win, number) {
                 breadList.push(acceptDiv);
             }
 
-            in_Plus(breadList[0], content_BreadImage.MOZZIMOZZI_BREAD, '모찌모찌식빵', '결결이 쫄깃한 모찌모찌 식빵은 국내 최초 돌절구 원리를 이용한 수백 번의 방아를 찧어 만든 식빵', '3,500', content_BreadImage.QR_TEST);
-            in_Plus(breadList[1], content_BreadImage.PURE_MILK_BREAD, '순우유식빵', '물 한방울 사용하지 않고 오직 밀가루,우유,버터 만을 사용해 만든 성심당 순우유 식빵', '4,000', content_BreadImage.QR_TEST);
+            in_Plus(breadList[0], content_BreadImage.MOZZIMOZZI_BREAD, '모찌모찌식빵', '결결이 쫄깃한 모찌모찌 식빵은 국내 최초 돌절구 원리를 이용한 수백 번의 방아를 찧어 만든 식빵', '3,500', bread_qr.MOZZIMOZZI_BREAD);
+            in_Plus(breadList[1], content_BreadImage.PURE_MILK_BREAD, '순우유식빵', '물 한방울 사용하지 않고 오직 밀가루,우유,버터 만을 사용해 만든 성심당 순우유 식빵', '4,000', bread_qr.PURE_MILK_BREAD);
             break;
 
         case bread_Enum.Soboro:
@@ -352,9 +359,9 @@ function Window_Setting(infor_win, number) {
                 breadList.push(acceptDiv);
             }
 
-            in_Plus(breadList[0], content_BreadImage.FRIED_SOBORO, '튀김소보로', '1980년 탄생 소보로, 앙금빵, 도넛의 3단 합체빵. 하나의 빵으로 3가지 맛을 즐기실 수 있는성심당 No.1 튀김소보로', '1,700', content_BreadImage.QR_TEST);
-            in_Plus(breadList[1], content_BreadImage.TUSOGUMA, '튀소구마', '튀소35주년을 기념하여 탄생한 튀소 동생. 달콤한 고구마 크림으로 속을 가득 채운 튀소구마', '1,700', content_BreadImage.QR_TEST);
-            in_Plus(breadList[2], content_BreadImage.LEEK_BREAD, '부추빵', '푸릇푸릇 싱싱한 부추를 계란샐러드, 햄과 함께 직접 버무려 만든 부추향 가득 만두 같은 영양만점 판타롱 부추빵', '2,000', content_BreadImage.QR_TEST);
+            in_Plus(breadList[0], content_BreadImage.FRIED_SOBORO, '튀김소보로', '1980년 탄생 소보로, 앙금빵, 도넛의 3단 합체빵. 하나의 빵으로 3가지 맛을 즐기실 수 있는성심당 No.1 튀김소보로', '1,700', bread_qr.FRIED_SOBORO);
+            in_Plus(breadList[1], content_BreadImage.TUSOGUMA, '튀소구마', '튀소35주년을 기념하여 탄생한 튀소 동생. 달콤한 고구마 크림으로 속을 가득 채운 튀소구마', '1,700', bread_qr.TUSOGUMA);
+            in_Plus(breadList[2], content_BreadImage.LEEK_BREAD, '부추빵', '푸릇푸릇 싱싱한 부추를 계란샐러드, 햄과 함께 직접 버무려 만든 부추향 가득 만두 같은 영양만점 판타롱 부추빵', '2,000', bread_qr.LEEK_BREAD);
             break;
 
         case bread_Enum.Health:
@@ -377,7 +384,7 @@ function Window_Setting(infor_win, number) {
                 breadList.push(acceptDiv);
             }
 
-            in_Plus(breadList[0], content_BreadImage.BOMUNSAN, '보문산메아리', '한겹 한겹 보드라운 빵결에 골드럼 시럽이 섬세하게 발려져 있어 깊은 풍미를 느낄 수 있습니다', '6,000', content_BreadImage.QR_TEST);
+            in_Plus(breadList[0], content_BreadImage.BOMUNSAN, '보문산메아리', '한겹 한겹 보드라운 빵결에 골드럼 시럽이 섬세하게 발려져 있어 깊은 풍미를 느낄 수 있습니다', '6,000', bread_qr.BOMUNSAN);
             in_Plus(breadList[1], content_BreadImage.PAIMANJU, '파이만쥬', '겉바속촉 파이와 달콤 팥앙금가득 파이만주', '9,600', content_BreadImage.QR_TEST);
             break;
 
