@@ -1,0 +1,111 @@
+body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    height: 100vh;
+    max-height: 100vh;
+    width: 100vw;
+    max-width: 100vw;
+    background-image: url('../imageFile/background.jpg');
+    font-family: 'preten-medium';
+}
+
+.bold-text {
+    font-weight: bold;
+}
+
+
+
+.page1 {
+    width: 100vw;
+    height: 100vh;
+    max-width: 100vw;
+    max-height: 100vh;
+    overflow: scroll;
+    z-index: 2;
+
+    /*touch-action: none; */
+    display: flex;
+    position: relative;
+}
+
+.page1::-webkit-scrollbar {  /* 스크롤바 없애기 */
+    display: none;
+}
+
+
+
+.page2 {
+    position: absolute;
+}
+
+.media_play {
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    text-align: center;
+    position: absolute;
+}
+
+.media_First_Sentence {
+    text-align: center;
+    font-family: 'OTFPro1';
+    font-size: 3.5vw;
+    padding-top: 5vh;
+}
+
+.media_Second_Sentence {
+    text-align: center;
+    font-family: 'OTFPro2';
+    font-size: 1.4vw;
+    color: #78531F;
+    padding-top: 2vh;
+}
+
+.media_Third {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 6;
+    padding-top: 5vh;
+    position: absolute;
+}
+
+.media_Fourth_Sentence {
+    text-align: center;
+    font-family: 'OTFPro1';
+    font-weight: bold;
+    font-size: 1.8vw;
+    padding-top: 6vh;
+}
+
+
+
+@font-face {
+    font-family: 'preten-medium';
+    font-style: normal;
+    src: url('../FontFile/Pretendard-1.3.9/public/static/Pretendard-Medium.otf');
+}
+
+@font-face {
+    font-family: 'preten-black';
+    font-style: normal;
+    src: url('../FontFile/Pretendard-1.3.9/public/static/Pretendard-Bold.otf');
+}
+
+@font-face {
+    font-family: 'preten-semi';
+    font-style: 'normal';
+    src: url('../FontFile/Pretendard-1.3.9/public/static/Pretendard-SemiBold.otf');
+}
+
+@font-face {
+    font-family: 'OTFPro1';
+    src: url('../FontFile/OTF/Pro/BareunDotumOTFPro1.otf');
+}
+
+@font-face {
+    font-family: 'OTFPro2';
+    src: url('../FontFile/OTF/Pro/BareunDotumOTFPro2.otf');
+}

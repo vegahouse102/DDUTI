@@ -1,0 +1,60 @@
+.page3 {
+    position: absolute;
+}
+
+.QR_class {
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    text-align: center;
+    position: absolute;
+}
+
+.page3_Text_1 {
+    text-align: center;
+    font-family: 'OTFPro1';
+    font-size: 3.2vw;
+    padding-top: 11vh;
+    font-weight: bold;
+}
+
+.page3_Text_2 {
+    text-align: center;
+    font-family: 'OTFPro2';
+    font-size: 2.3vw;
+    padding-top: 6vh;
+    color: #A36B1D;
+}
+
+.page3_Image_1 {
+    padding-top: 4vh;
+    text-align: center;
+    width: 100vw;
+}
+
+.page3_Image_2 {
+    position: absolute;
+    width: 20vw;
+    height: 6vh;
+    top: 70%;
+    left: 62%;
+}
+
+.page3_Image_2 img {
+    width: 100%;
+    height: 100%;
+    transform: rotate(200deg);
+}
+
+.page3_Image_3 {
+    position: absolute;
+    top: 45%;
+    left: 81.5%;
+}
+
+.page3_Image_3 img {
+    width: 100%;
+    height: 100%;
+    width: 17vw;
+    height: 51vh;
+}
