@@ -85,19 +85,19 @@ body {
 @font-face {
     font-family: 'preten-medium';
     font-style: normal;
-    src: url('../../FontFile/Pretendard-1.3.9/public/static/Pretendard-Medium.otf');
+    src: url('../FontFile/Pretendard-1.3.9/public/static/Pretendard-Medium.otf');
 }
 
 @font-face {
     font-family: 'preten-black';
     font-style: normal;
-    src: url('../../FontFile/Pretendard-1.3.9/public/static/Pretendard-Bold.otf');
+    src: url('../FontFile/Pretendard-1.3.9/public/static/Pretendard-Bold.otf');
 }
 
 @font-face {
     font-family: 'preten-semi';
     font-style: 'normal';
-    src: url('../../FontFile/Pretendard-1.3.9/public/static/Pretendard-SemiBold.otf');
+    src: url('../FontFile/Pretendard-1.3.9/public/static/Pretendard-SemiBold.otf');
 }
 
 @font-face {
