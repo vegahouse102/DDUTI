@@ -59,10 +59,8 @@ function story_scrolling()
         watch_Count_Page();
     }
 
-    if (newDiv.length == 2) {
-        setTimeout(() => {
-            content_body.style.backgroundImage = 'none';
-        }, 1000);
+    if (scroll_index == (max_page - 1)) {
+        content_body.style.backgroundImage = 'none';
     }
 
     // 페이지 초기화
@@ -446,7 +444,7 @@ function settings_Page()
     minipage.style.top = '94vh';
     minipage.style.left = '50vw';
     infor.style.marginLeft = '6vw';
-    infor.style.marginTop = '26vh';
+    infor.style.marginTop = '18vh';
     infor.style.textAlign = 'center';
 }
 

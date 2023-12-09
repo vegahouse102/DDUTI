@@ -1,5 +1,5 @@
 const image_path = {
-    QR_IMAGE: "../imageFile/SungSim_Map.png",
+    QR_IMAGE: "../imageFile/QR_test.png",
     PHONE: "../imageFile/phone.png",
     RED_ARROW: "../imageFile/Red_Arrow.png"
 }
