@@ -157,14 +157,14 @@ function settings_Page()
     infor.innerHTML = normalText('‘모든 이가 다 좋게 여기는 일을 하십시오’ 라는 경영이념으로 대흥동 성당의 오기선 신부님께서 주신 밀가루 두 포대와<br>피난에서 살아가게 되면 남은 일생을 가난한 이웃을 위해 바치겠다는 창업주의 기도를 바탕으로 시작된<br>나눔정신을 실천하는 성심당의 이야기 들어주실래요?');
     minipage.innerHTML = extraText('김태훈 글 &nbsp&nbsp&nbsp박선향 그림 &nbsp&nbsp&nbsp로드스쿨 제작');
 
-    preface.style.marginTop = '15%';
+    preface.style.marginTop = '7%';
     preface.style.paddingBottom = '5%';
     preface.style.alignItems = 'center';
     preface.style.flexDirection = 'column';
     preface.style.display = 'flex';
     infor.style.lineHeight = '1.7';
     preface.style.lineHeight = '1.4';
-    minipage.style.marginTop = '22%';
+    minipage.style.marginTop = '5%';
     minipage.style.marginLeft = '0%';
     // 1페이지만 설정
     setTimeout(() => {
@@ -184,7 +184,7 @@ function settings_Page()
     minipage.innerHTML = extraText('1/16');
 
     infor.style.lineHeight = '1.7';
-    infor.style.marginTop = '30%';
+    infor.style.marginTop = '15%';
     minipage.style.position = 'absolute';
     minipage.style.top = '94%';
     minipage.style.left = '50%';
@@ -202,9 +202,9 @@ function settings_Page()
     minipage.style.top = '94%';
     minipage.style.left = '50%';
     preface.style.marginLeft = '6%';
-    preface.style.marginTop = '31%'
+    preface.style.marginTop = '15%'
     infor.style.marginLeft = '6%';
-    infor.style.marginTop = '8%';
+    infor.style.marginTop = '4%';
 
     // 4페이지
     div_append(newDiv[max_page - 4]);
@@ -218,9 +218,9 @@ function settings_Page()
     minipage.style.position = 'absolute';
     minipage.style.top = '94%';
     minipage.style.left = '50%';
-    preface.style.marginTop = '17%';
+    preface.style.marginTop = '8%';
     preface.style.marginLeft = '6%';
-    infor.style.marginTop = '8%';
+    infor.style.marginTop = '4%';
     infor.style.marginLeft = '6%';
 
     // 5페이지
@@ -236,9 +236,9 @@ function settings_Page()
     minipage.style.top = '94%';
     minipage.style.left = '50%';
     preface.style.marginLeft = '6%';
-    preface.style.marginTop = '8%';
+    preface.style.marginTop = '4%';
     infor.style.marginLeft = '6%';
-    infor.style.marginTop = '8%';
+    infor.style.marginTop = '4%';
 
     // 6페이지
     div_append(newDiv[max_page - 6]);
@@ -253,9 +253,9 @@ function settings_Page()
     minipage.style.top = '94%';
     minipage.style.left = '50%';
     preface.style.marginLeft = '6%';
-    preface.style.marginTop = '19%';
+    preface.style.marginTop = '9%';
     infor.style.marginLeft = '6%';
-    infor.style.marginTop = '8%';
+    infor.style.marginTop = '4%';
 
     // 7페이지
     div_append(newDiv[max_page - 7]);
@@ -270,9 +270,9 @@ function settings_Page()
     minipage.style.top = '94%';
     minipage.style.left = '50%';
     preface.style.marginLeft = '6%';
-    preface.style.marginTop = '11%';
+    preface.style.marginTop = '5%';
     infor.style.marginLeft = '6%';
-    infor.style.marginTop = '8%';
+    infor.style.marginTop = '4%';
 
     // 8페이지
     div_append(newDiv[max_page - 8]);
@@ -287,9 +287,9 @@ function settings_Page()
     minipage.style.top = '94%';
     minipage.style.left = '50%';
     preface.style.marginLeft = '6%';
-    preface.style.marginTop = '22%';
+    preface.style.marginTop = '11%';
     infor.style.marginLeft = '6%';
-    infor.style.marginTop = '8%';
+    infor.style.marginTop = '4%';
 
     // 9페이지
     div_append(newDiv[max_page - 9]);
@@ -304,9 +304,9 @@ function settings_Page()
     minipage.style.top = '94%';
     minipage.style.left = '50%';
     preface.style.marginLeft = '6%';
-    preface.style.marginTop = '14%';
+    preface.style.marginTop = '7%';
     infor.style.marginLeft = '6%';
-    infor.style.marginTop = '8%';
+    infor.style.marginTop = '4%';
 
     // 10페이지
     div_append(newDiv[max_page - 10]);
@@ -321,9 +321,9 @@ function settings_Page()
     minipage.style.top = '94%';
     minipage.style.left = '50%';
     preface.style.marginLeft = '6%';
-    preface.style.marginTop = '20%';
+    preface.style.marginTop = '10%';
     infor.style.marginLeft = '6%';
-    infor.style.marginTop = '8%';
+    infor.style.marginTop = '4%';
 
     // 11페이지
     div_append(newDiv[max_page - 11]);
@@ -338,9 +338,9 @@ function settings_Page()
     minipage.style.top = '94%';
     minipage.style.left = '50%';
     preface.style.marginLeft = '6%';
-    preface.style.marginTop = '18%';
+    preface.style.marginTop = '9%';
     infor.style.marginLeft = '6%';
-    infor.style.marginTop = '8%';
+    infor.style.marginTop = '4%';
 
     // 12페이지
     div_append(newDiv[max_page - 12]);
@@ -355,9 +355,9 @@ function settings_Page()
     minipage.style.top = '94%';
     minipage.style.left = '50%';
     preface.style.marginLeft = '6%';
-    preface.style.marginTop = '28%';
+    preface.style.marginTop = '14%';
     infor.style.marginLeft = '6%';
-    infor.style.marginTop = '8%';
+    infor.style.marginTop = '4%';
 
     // 13페이지
     div_append(newDiv[max_page - 13]);
@@ -372,9 +372,9 @@ function settings_Page()
     minipage.style.top = '94%';
     minipage.style.left = '50%';
     preface.style.marginLeft = '6%';
-    preface.style.marginTop = '24%';
+    preface.style.marginTop = '12%';
     infor.style.marginLeft = '6%';
-    infor.style.marginTop = '8%';
+    infor.style.marginTop = '4%';
 
     // 14페이지
     div_append(newDiv[max_page - 14]);
@@ -389,9 +389,9 @@ function settings_Page()
     minipage.style.top = '94%';
     minipage.style.left = '50%';
     preface.style.marginLeft = '6%';
-    preface.style.marginTop = '18%';
+    preface.style.marginTop = '9%';
     infor.style.marginLeft = '6%';
-    infor.style.marginTop = '8%';
+    infor.style.marginTop = '4%';
 
     // 15페이지
     div_append(newDiv[max_page - 15]);
@@ -406,9 +406,9 @@ function settings_Page()
     minipage.style.top = '94%';
     minipage.style.left = '50%';
     preface.style.marginLeft = '6%';
-    preface.style.marginTop = '24%';
+    preface.style.marginTop = '12%';
     infor.style.marginLeft = '6%';
-    infor.style.marginTop = '8%';
+    infor.style.marginTop = '4%';
 
     // 16페이지
     div_append(newDiv[max_page - 16]);
@@ -423,9 +423,9 @@ function settings_Page()
     minipage.style.top = '94%';
     minipage.style.left = '50%';
     preface.style.marginLeft = '6%';
-    preface.style.marginTop = '35%';
+    preface.style.marginTop = '17%';
     infor.style.marginLeft = '6%';
-    infor.style.marginTop = '8%';
+    infor.style.marginTop = '4%';
 
     // 17페이지
     div_append(newDiv[max_page - 17]);
@@ -441,7 +441,7 @@ function settings_Page()
     minipage.style.top = '94%';
     minipage.style.left = '50%';
     infor.style.marginLeft = '6%';
-    infor.style.marginTop = '18%';
+    infor.style.marginTop = '9%';
     infor.style.textAlign = 'center';
 }
 
@@ -453,17 +453,17 @@ function div_append(teDiv) {
 }
 
 function normalText(text) {
-    return `<span style="font-size: 1.6vw;">${text}</span>`;
+    return `<span style="font-size: 1.2vw;">${text}</span>`;
 }
   
 function boldText(text) {
-    return `<span style="font-size: 3.5vw; font-family: 'preten-black';">${text}</span>`;
+    return `<span style="font-size: 2.7vw; font-family: 'preten-black';">${text}</span>`;
 }
 
 function boldText_2(text) {
-    return `<span style="font-size: 2.4vw; font-family: 'preten-black';">${text}</span>`;
+    return `<span style="font-size: 1.8vw; font-family: 'preten-black';">${text}</span>`;
 }
 
 function extraText(text) {
-    return `<span style="font-size: 1.2vw; font-family: 'preten-semi';">${text}</span>`;
+    return `<span style="font-size: 0.9vw; font-family: 'preten-semi';">${text}</span>`;
 }
