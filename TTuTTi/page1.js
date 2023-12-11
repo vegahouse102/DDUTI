@@ -94,16 +94,16 @@ function story_scrolling()
 function class_initial(temporary_div)
 {
     temporary_div.style.width = '100vw';
-    temporary_div.style.height = '100vh';
+    temporary_div.style.height = '100%';
     temporary_div.style.maxWidth = '100vw';
     temporary_div.style.minWidth = '100vw';
-    temporary_div.style.maxHeight = '100vh';
+    temporary_div.style.maxHeight = '100%';
 
     temporary_div.style.backgroundColor = 'rgba(0, 0, 0, 0)';
     temporary_div.style.position = 'absolute';
     temporary_div.style.transform = 'translateX(100vw)';
     temporary_div.style.transition = 'transform 2.0s ease-in-out';
-    temporary_div.style.backgroundSize = '60vw 100vh';
+    temporary_div.style.backgroundSize = '60vw 100%';
     temporary_div.style.backgroundRepeat = 'no-repeat';
     temporary_div.style.backgroundPosition = 'right top';
 
@@ -180,7 +180,7 @@ function settings_Page()
     // 2페이지
     div_append(newDiv[max_page - 2]);
 
-    newDiv[max_page - 2].style.backgroundSize = '100vw 100vh';
+    newDiv[max_page - 2].style.backgroundSize = '100vw 100%';
 
     infor.style.textAlign = 'center';
     infor.innerHTML = normalText('정말 추운 겨울이었어요.<br>여름부터 시작된 전쟁이 겨울까지 계속 됐거든요.<br>전쟁 때문에 사람들이 많이 죽고 다쳤어요.<br>동네가 전쟁터가 되어서 고향을 떠나야 하는 사람들도 많았어요.<br>임길순 아저씨가 살았던 함경남도 함주 땅도 그랬어요.<br>아저씨는 원래 과수원을 했어요.<br>아줌마와 네 딸, 이렇게 여섯 식구가 행복하게 살았어요.<br>하지만 전쟁이 모든 것을 빼앗아 갔어요.<br>살기 위해선 고향을 떠날 수밖에 없었어요.');
@@ -433,7 +433,7 @@ function settings_Page()
     // 17페이지
     div_append(newDiv[max_page - 17]);
 
-    newDiv[max_page - 17].style.backgroundSize = '100vw 100vh';
+    newDiv[max_page - 17].style.backgroundSize = '100vw 100%';
 
     infor.innerHTML = normalText('어느덧 성심당은 100년을 바라보는 빵집이 되었어요.<br>1956년 대전역 앞 작은 찐빵집으로 시작해 이제는 대전을 대표하는 큰 회사가 되었지요.<br>시대도 바뀌었고 사람도 많이 바뀌었어요.<br>그러나 그때나 지금이나 한 가지 변하지 않는 것이 있답니다.<br>바로 ‘사랑의 문화’에요.<br>빵을 통해 어려운 이웃을 돕고, 또 모든 사람들과 평화롭게 지내려는 정신입니다.<br>성심당은 오늘도 대전에서 “모든이가 다 좋게 여기는 일” 을 하려고 땀흘리고 있답니다.');
     minipage.innerHTML = extraText('16/16');
