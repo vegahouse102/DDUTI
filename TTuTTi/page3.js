@@ -7,7 +7,9 @@ const image_path = {
 
 
 function page3_Call() {
-    page3_Create();
+    setTimeout(() => {
+        page3_Create();
+    }, 3000);
 }
 
 
