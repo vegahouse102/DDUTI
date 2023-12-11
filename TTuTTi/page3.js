@@ -41,7 +41,7 @@ function page3_Create() {
 
         page_count = 4;
         watch_Count_Page();
-    }, 7000);
+    }, 12000);
 }
 
 // page3 첫번째 텍스트

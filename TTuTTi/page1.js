@@ -377,7 +377,7 @@ function settings_Page()
     infor.style.marginTop = '3%';
 
     // 13페이지
-    div_append(newDiv[max_page - 13]);
+    div_append(newDiv[max_page - 14]);
 
     preface.innerHTML = boldText_2('성심당의 고향, 대전역 입점');
     infor.innerHTML = normalText('대전역에 있는 성심당은 2012년에 문을 열었어요.<br>임길순 할아버지가 대전역 광장에 천막을 치고 성심당을 시작한지 56년만이었어요.<br>임영진 아저씨는 감격했어요.<br><br>돌아가신 임길순 할아버지도 하늘에서 기뻐하실 거라고 믿었어요.<br>대전역 성심당도 처음부터 인기가 많았어요.<br><br>튀김소보로 줄이 길어서 기차 시간을 놓치는 승객도 있었고,<br>KTX를 타고 일부러 대전역에 내려서 성심당에 들렀다 가는 사람들도 많았어요.<br>성심당 빵들은 이렇게 대전역에서 KTX 타고 전국으로 퍼져나갔답니다.');
@@ -453,7 +453,7 @@ function div_append(teDiv) {
 }
 
 function normalText(text) {
-    return `<span style="font-size: 1.7vw;">${text}</span>`;
+    return `<span style="font-size: 1.6vw;">${text}</span>`;
 }
   
 function boldText(text) {
