@@ -1,4 +1,4 @@
-let page_count = 4;
+let page_count = 2;
 
 const body_Background = {
     BACKGROUND : "url('../imageFile/background.jpg')",

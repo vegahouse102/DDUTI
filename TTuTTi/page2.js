@@ -25,7 +25,7 @@ function page2_Call() {
 function page2_Window_Create() {
     const media_Window = document.createElement('div');
     media_Window.classList.add('media_play');
-    media_Window.style.left = '100vw';
+    media_Window.style.left = '100%';
 
     // Media Window 창에 대입
     Window_First_Sentence(media_Window);
@@ -38,7 +38,7 @@ function page2_Window_Create() {
     // Media 재생
     setTimeout(() => {
         media_Window.style.transition = 'left 2.0s ease-in-out';
-        media_Window.style.left = '0vw';
+        media_Window.style.left = '0%';
         playNextVideo(media_Window);
     }, 2200);
 }
@@ -48,14 +48,14 @@ function playNextVideo(m_media_Window) {
     const currentVideo = video_Array[video_Array_Count];
     if (video_Array_Count == 0) {
         setTimeout(() => {
-            currentVideo.style.left = '7.5vw';
+            currentVideo.style.left = '7.5%';
             setTimeout(() => {
                 currentVideo.play();
             }, 2000);
         }, 2000);
     }
     else {
-        currentVideo.style.left = '7.5vw';
+        currentVideo.style.left = '7.5%';
         setTimeout(() => {
             currentVideo.play();
         }, 2000);
@@ -63,7 +63,7 @@ function playNextVideo(m_media_Window) {
   
     // 비디오 종료 시 다음 활동
     currentVideo.addEventListener('ended', function() {
-      currentVideo.style.left = '-100vw';
+      currentVideo.style.left = '-100%';
       video_Array_Count++;
   
       // 마지막 비디오가 아니면 다음 비디오 재생
@@ -75,7 +75,7 @@ function playNextVideo(m_media_Window) {
       // 마지막이라면 다음 페이지 불러오기
       else {
         setTimeout(() => {
-            m_media_Window.style.left = '-100vw';
+            m_media_Window.style.left = '-100%';
             setTimeout(() => {
                 m_media_Window.remove();
                 video_Array.length = 0;
@@ -148,12 +148,12 @@ function Video_Setting(m_video) {
 
     // JavaScript로 비디오 크기 설정
     m_video.style.position = 'absolute';
-    m_video.style.width = '85vw';
-    m_video.style.height = '55vh';
-    m_video.style.left = '0vw';
-    m_video.style.top = '17vh';
+    m_video.style.width = '85%';
+    m_video.style.height = '55%';
+    m_video.style.left = '0%';
+    m_video.style.top = '17%';
 
-    m_video.style.left = '100vw';
+    m_video.style.left = '100%';
     m_video.style.transition = 'left 2.0s ease-in-out';
 }
 
