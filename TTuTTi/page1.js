@@ -76,10 +76,10 @@ function story_scrolling()
     // 슬라이드 이동
     if (newDiv.length != 0) {
         const dele_div = newDiv.pop();
-        dele_div.style.transform = 'translateX(-100%)';
+        dele_div.style.transform = 'translateX(-100vw)';
         // 오류 방지 및 다음 div 미리 스크롤
         if (newDiv.length > 0) {
-            newDiv[newDiv.length - 1].style.transform = 'translateX(0%)';
+            newDiv[newDiv.length - 1].style.transform = 'translateX(0vw)';
             setTimeout(() => {
                 change_Color(newDiv[newDiv.length - 1]);
             }, 2000);
@@ -93,14 +93,17 @@ function story_scrolling()
 // 뷰 기본 상태 지정
 function class_initial(temporary_div)
 {
-    temporary_div.style.width = '100%';
-    temporary_div.style.height = '100%';
+    temporary_div.style.width = '100vw';
+    temporary_div.style.height = '100vh';
+    temporary_div.style.maxWidth = '100vw';
+    temporary_div.style.minWidth = '100vw';
+    temporary_div.style.maxHeight = '100vh';
 
     temporary_div.style.backgroundColor = 'rgba(0, 0, 0, 0)';
     temporary_div.style.position = 'absolute';
-    temporary_div.style.transform = 'translateX(100%';
+    temporary_div.style.transform = 'translateX(100vw)';
     temporary_div.style.transition = 'transform 2.0s ease-in-out';
-    temporary_div.style.backgroundSize = '60% 100%';
+    temporary_div.style.backgroundSize = '60vw 100vh';
     temporary_div.style.backgroundRepeat = 'no-repeat';
     temporary_div.style.backgroundPosition = 'right top';
 
@@ -147,7 +150,7 @@ function settings_Page()
     const imgElement = document.createElement('img');
     imgElement.src = img_flour;
     preface.appendChild(imgElement);
-    imgElement.style.height = '22%';
+    imgElement.style.height = '22vh';
     imgElement.style.width = 'auto';
 
     infor.style.textAlign = 'center';
@@ -157,18 +160,18 @@ function settings_Page()
     infor.innerHTML = normalText('‘모든 이가 다 좋게 여기는 일을 하십시오’ 라는 경영이념으로 대흥동 성당의 오기선 신부님께서 주신 밀가루 두 포대와<br>피난에서 살아가게 되면 남은 일생을 가난한 이웃을 위해 바치겠다는 창업주의 기도를 바탕으로 시작된<br>나눔정신을 실천하는 성심당의 이야기 들어주실래요?');
     minipage.innerHTML = extraText('김태훈 글 &nbsp&nbsp&nbsp박선향 그림 &nbsp&nbsp&nbsp로드스쿨 제작');
 
-    preface.style.marginTop = '7%';
-    preface.style.paddingBottom = '5%';
+    preface.style.marginTop = '15vh';
+    preface.style.paddingBottom = '5vh';
     preface.style.alignItems = 'center';
     preface.style.flexDirection = 'column';
     preface.style.display = 'flex';
     infor.style.lineHeight = '1.7';
     preface.style.lineHeight = '1.4';
-    minipage.style.marginTop = '5%';
-    minipage.style.marginLeft = '0%';
+    minipage.style.marginTop = '22vh';
+    minipage.style.marginLeft = '0vw';
     // 1페이지만 설정
     setTimeout(() => {
-        newDiv[max_page - 1].style.transform = 'translateX(0%)';
+        newDiv[max_page - 1].style.transform = 'translateX(0vw)';
     }, 100);
     setTimeout(() => {
         change_Color(newDiv[max_page - 1]);
@@ -177,17 +180,17 @@ function settings_Page()
     // 2페이지
     div_append(newDiv[max_page - 2]);
 
-    newDiv[max_page - 2].style.backgroundSize = '100% 100%';
+    newDiv[max_page - 2].style.backgroundSize = '100vw 100vh';
 
     infor.style.textAlign = 'center';
     infor.innerHTML = normalText('정말 추운 겨울이었어요.<br>여름부터 시작된 전쟁이 겨울까지 계속 됐거든요.<br>전쟁 때문에 사람들이 많이 죽고 다쳤어요.<br>동네가 전쟁터가 되어서 고향을 떠나야 하는 사람들도 많았어요.<br>임길순 아저씨가 살았던 함경남도 함주 땅도 그랬어요.<br>아저씨는 원래 과수원을 했어요.<br>아줌마와 네 딸, 이렇게 여섯 식구가 행복하게 살았어요.<br>하지만 전쟁이 모든 것을 빼앗아 갔어요.<br>살기 위해선 고향을 떠날 수밖에 없었어요.');
     minipage.innerHTML = extraText('1/16');
 
     infor.style.lineHeight = '1.7';
-    infor.style.marginTop = '15%';
+    infor.style.marginTop = '30vh';
     minipage.style.position = 'absolute';
-    minipage.style.top = '94%';
-    minipage.style.left = '50%';
+    minipage.style.top = '94vh';
+    minipage.style.left = '50vw';
 
     // 3페이지
     div_append(newDiv[max_page - 3]);
@@ -199,12 +202,12 @@ function settings_Page()
     infor.style.lineHeight = '1.7';
 
     minipage.style.position = 'absolute';
-    minipage.style.top = '94%';
-    minipage.style.left = '50%';
-    preface.style.marginLeft = '6%';
-    preface.style.marginTop = '15%'
-    infor.style.marginLeft = '6%';
-    infor.style.marginTop = '4%';
+    minipage.style.top = '94vh';
+    minipage.style.left = '50vw';
+    preface.style.marginLeft = '6vw';
+    preface.style.marginTop = '31vh'
+    infor.style.marginLeft = '6vw';
+    infor.style.marginTop = '8vh';
 
     // 4페이지
     div_append(newDiv[max_page - 4]);
@@ -216,12 +219,12 @@ function settings_Page()
     infor.style.lineHeight = '1.7';
 
     minipage.style.position = 'absolute';
-    minipage.style.top = '94%';
-    minipage.style.left = '50%';
-    preface.style.marginTop = '8%';
-    preface.style.marginLeft = '6%';
-    infor.style.marginTop = '4%';
-    infor.style.marginLeft = '6%';
+    minipage.style.top = '94vh';
+    minipage.style.left = '50vw';
+    preface.style.marginTop = '17vh';
+    preface.style.marginLeft = '6vw';
+    infor.style.marginTop = '8vh';
+    infor.style.marginLeft = '6vw';
 
     // 5페이지
     div_append(newDiv[max_page - 5]);
@@ -233,12 +236,12 @@ function settings_Page()
     infor.style.lineHeight = '1.7';
 
     minipage.style.position = 'absolute';
-    minipage.style.top = '94%';
-    minipage.style.left = '50%';
-    preface.style.marginLeft = '6%';
-    preface.style.marginTop = '4%';
-    infor.style.marginLeft = '6%';
-    infor.style.marginTop = '4%';
+    minipage.style.top = '94vh';
+    minipage.style.left = '50vw';
+    preface.style.marginLeft = '6vw';
+    preface.style.marginTop = '8vh';
+    infor.style.marginLeft = '6vw';
+    infor.style.marginTop = '8vh';
 
     // 6페이지
     div_append(newDiv[max_page - 6]);
@@ -250,12 +253,12 @@ function settings_Page()
     infor.style.lineHeight = '1.7';
 
     minipage.style.position = 'absolute';
-    minipage.style.top = '94%';
-    minipage.style.left = '50%';
-    preface.style.marginLeft = '6%';
-    preface.style.marginTop = '9%';
-    infor.style.marginLeft = '6%';
-    infor.style.marginTop = '4%';
+    minipage.style.top = '94vh';
+    minipage.style.left = '50vw';
+    preface.style.marginLeft = '6vw';
+    preface.style.marginTop = '19vh';
+    infor.style.marginLeft = '6vw';
+    infor.style.marginTop = '8vh';
 
     // 7페이지
     div_append(newDiv[max_page - 7]);
@@ -267,12 +270,12 @@ function settings_Page()
     infor.style.lineHeight = '1.7';
 
     minipage.style.position = 'absolute';
-    minipage.style.top = '94%';
-    minipage.style.left = '50%';
-    preface.style.marginLeft = '6%';
-    preface.style.marginTop = '5%';
-    infor.style.marginLeft = '6%';
-    infor.style.marginTop = '4%';
+    minipage.style.top = '94vh';
+    minipage.style.left = '50vw';
+    preface.style.marginLeft = '6vw';
+    preface.style.marginTop = '11vh';
+    infor.style.marginLeft = '6vw';
+    infor.style.marginTop = '8vh';
 
     // 8페이지
     div_append(newDiv[max_page - 8]);
@@ -284,12 +287,12 @@ function settings_Page()
     infor.style.lineHeight = '1.7';
 
     minipage.style.position = 'absolute';
-    minipage.style.top = '94%';
-    minipage.style.left = '50%';
-    preface.style.marginLeft = '6%';
-    preface.style.marginTop = '11%';
-    infor.style.marginLeft = '6%';
-    infor.style.marginTop = '4%';
+    minipage.style.top = '94vh';
+    minipage.style.left = '50vw';
+    preface.style.marginLeft = '6vw';
+    preface.style.marginTop = '22vh';
+    infor.style.marginLeft = '6vw';
+    infor.style.marginTop = '8vh';
 
     // 9페이지
     div_append(newDiv[max_page - 9]);
@@ -301,12 +304,12 @@ function settings_Page()
     infor.style.lineHeight = '1.7';
 
     minipage.style.position = 'absolute';
-    minipage.style.top = '94%';
-    minipage.style.left = '50%';
-    preface.style.marginLeft = '6%';
-    preface.style.marginTop = '7%';
-    infor.style.marginLeft = '6%';
-    infor.style.marginTop = '4%';
+    minipage.style.top = '94vh';
+    minipage.style.left = '50vw';
+    preface.style.marginLeft = '6vw';
+    preface.style.marginTop = '14vh';
+    infor.style.marginLeft = '6vw';
+    infor.style.marginTop = '8vh';
 
     // 10페이지
     div_append(newDiv[max_page - 10]);
@@ -318,12 +321,12 @@ function settings_Page()
     infor.style.lineHeight = '1.7';
 
     minipage.style.position = 'absolute';
-    minipage.style.top = '94%';
-    minipage.style.left = '50%';
-    preface.style.marginLeft = '6%';
-    preface.style.marginTop = '10%';
-    infor.style.marginLeft = '6%';
-    infor.style.marginTop = '4%';
+    minipage.style.top = '94vh';
+    minipage.style.left = '50vw';
+    preface.style.marginLeft = '6vw';
+    preface.style.marginTop = '20vh';
+    infor.style.marginLeft = '6vw';
+    infor.style.marginTop = '8vh';
 
     // 11페이지
     div_append(newDiv[max_page - 11]);
@@ -335,12 +338,12 @@ function settings_Page()
     infor.style.lineHeight = '1.7';
 
     minipage.style.position = 'absolute';
-    minipage.style.top = '94%';
-    minipage.style.left = '50%';
-    preface.style.marginLeft = '6%';
-    preface.style.marginTop = '9%';
-    infor.style.marginLeft = '6%';
-    infor.style.marginTop = '4%';
+    minipage.style.top = '94vh';
+    minipage.style.left = '50vw';
+    preface.style.marginLeft = '6vw';
+    preface.style.marginTop = '18vh';
+    infor.style.marginLeft = '6vw';
+    infor.style.marginTop = '8vh';
 
     // 12페이지
     div_append(newDiv[max_page - 12]);
@@ -352,12 +355,12 @@ function settings_Page()
     infor.style.lineHeight = '1.7';
 
     minipage.style.position = 'absolute';
-    minipage.style.top = '94%';
-    minipage.style.left = '50%';
-    preface.style.marginLeft = '6%';
-    preface.style.marginTop = '14%';
-    infor.style.marginLeft = '6%';
-    infor.style.marginTop = '4%';
+    minipage.style.top = '94vh';
+    minipage.style.left = '50vw';
+    preface.style.marginLeft = '6vw';
+    preface.style.marginTop = '28vh';
+    infor.style.marginLeft = '6vw';
+    infor.style.marginTop = '8vh';
 
     // 13페이지
     div_append(newDiv[max_page - 13]);
@@ -369,12 +372,12 @@ function settings_Page()
     infor.style.lineHeight = '1.7';
 
     minipage.style.position = 'absolute';
-    minipage.style.top = '94%';
-    minipage.style.left = '50%';
-    preface.style.marginLeft = '6%';
-    preface.style.marginTop = '12%';
-    infor.style.marginLeft = '6%';
-    infor.style.marginTop = '4%';
+    minipage.style.top = '94vh';
+    minipage.style.left = '50vw';
+    preface.style.marginLeft = '6vw';
+    preface.style.marginTop = '24vh';
+    infor.style.marginLeft = '6vw';
+    infor.style.marginTop = '8vh';
 
     // 14페이지
     div_append(newDiv[max_page - 14]);
@@ -386,12 +389,12 @@ function settings_Page()
     infor.style.lineHeight = '1.7';
 
     minipage.style.position = 'absolute';
-    minipage.style.top = '94%';
-    minipage.style.left = '50%';
-    preface.style.marginLeft = '6%';
-    preface.style.marginTop = '9%';
-    infor.style.marginLeft = '6%';
-    infor.style.marginTop = '4%';
+    minipage.style.top = '94vh';
+    minipage.style.left = '50vw';
+    preface.style.marginLeft = '6vw';
+    preface.style.marginTop = '18vh';
+    infor.style.marginLeft = '6vw';
+    infor.style.marginTop = '8vh';
 
     // 15페이지
     div_append(newDiv[max_page - 15]);
@@ -403,12 +406,12 @@ function settings_Page()
     infor.style.lineHeight = '1.7';
 
     minipage.style.position = 'absolute';
-    minipage.style.top = '94%';
-    minipage.style.left = '50%';
-    preface.style.marginLeft = '6%';
-    preface.style.marginTop = '12%';
-    infor.style.marginLeft = '6%';
-    infor.style.marginTop = '4%';
+    minipage.style.top = '94vh';
+    minipage.style.left = '50vw';
+    preface.style.marginLeft = '6vw';
+    preface.style.marginTop = '24vh';
+    infor.style.marginLeft = '6vw';
+    infor.style.marginTop = '8vh';
 
     // 16페이지
     div_append(newDiv[max_page - 16]);
@@ -420,17 +423,17 @@ function settings_Page()
     infor.style.lineHeight = '1.7';
 
     minipage.style.position = 'absolute';
-    minipage.style.top = '94%';
-    minipage.style.left = '50%';
-    preface.style.marginLeft = '6%';
-    preface.style.marginTop = '17%';
-    infor.style.marginLeft = '6%';
-    infor.style.marginTop = '4%';
+    minipage.style.top = '94vh';
+    minipage.style.left = '50vw';
+    preface.style.marginLeft = '6vw';
+    preface.style.marginTop = '35vh';
+    infor.style.marginLeft = '6vw';
+    infor.style.marginTop = '8vh';
 
     // 17페이지
     div_append(newDiv[max_page - 17]);
 
-    newDiv[max_page - 17].style.backgroundSize = '100% 100%';
+    newDiv[max_page - 17].style.backgroundSize = '100vw 100vh';
 
     infor.innerHTML = normalText('어느덧 성심당은 100년을 바라보는 빵집이 되었어요.<br>1956년 대전역 앞 작은 찐빵집으로 시작해 이제는 대전을 대표하는 큰 회사가 되었지요.<br>시대도 바뀌었고 사람도 많이 바뀌었어요.<br>그러나 그때나 지금이나 한 가지 변하지 않는 것이 있답니다.<br>바로 ‘사랑의 문화’에요.<br>빵을 통해 어려운 이웃을 돕고, 또 모든 사람들과 평화롭게 지내려는 정신입니다.<br>성심당은 오늘도 대전에서 “모든이가 다 좋게 여기는 일” 을 하려고 땀흘리고 있답니다.');
     minipage.innerHTML = extraText('16/16');
@@ -438,10 +441,10 @@ function settings_Page()
     infor.style.lineHeight = '1.7';
 
     minipage.style.position = 'absolute';
-    minipage.style.top = '94%';
-    minipage.style.left = '50%';
-    infor.style.marginLeft = '6%';
-    infor.style.marginTop = '9%';
+    minipage.style.top = '94vh';
+    minipage.style.left = '50vw';
+    infor.style.marginLeft = '6vw';
+    infor.style.marginTop = '18vh';
     infor.style.textAlign = 'center';
 }
 
@@ -453,17 +456,17 @@ function div_append(teDiv) {
 }
 
 function normalText(text) {
-    return `<span style="font-size: 1.2vw;">${text}</span>`;
+    return `<span style="font-size: 1.6vw;">${text}</span>`;
 }
   
 function boldText(text) {
-    return `<span style="font-size: 2.7vw; font-family: 'preten-black';">${text}</span>`;
+    return `<span style="font-size: 3.5vw; font-family: 'preten-black';">${text}</span>`;
 }
 
 function boldText_2(text) {
-    return `<span style="font-size: 1.8vw; font-family: 'preten-black';">${text}</span>`;
+    return `<span style="font-size: 2.4vw; font-family: 'preten-black';">${text}</span>`;
 }
 
 function extraText(text) {
-    return `<span style="font-size: 0.9vw; font-family: 'preten-semi';">${text}</span>`;
+    return `<span style="font-size: 1.2vw; font-family: 'preten-semi';">${text}</span>`;
 }
