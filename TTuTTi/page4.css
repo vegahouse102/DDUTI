@@ -18,7 +18,7 @@
     text-align: center;
     font-family: 'OTFPro1';
     font-size: 3.0vw;
-    padding-top: 12%;
+    padding-top: 6%;
     font-weight: bold;
 }
 
@@ -26,7 +26,7 @@
     text-align: center;
     font-family: 'OTFPro2';
     font-size: 2.0vw;
-    padding-top: 3%;
+    padding-top: 2%;
     color: #A36B1D;
 }
 
@@ -43,7 +43,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 7%;
+    margin-top: 5%;
     margin-left: 22%;
 }
 
@@ -78,6 +78,7 @@
     left: 7.5%;
     width: 85%;
     height: 90%;
+    border-radius: 8%;
     background-image: url('../imageFile/background.jpg');
     z-index: 15;
     transition: top 1s ease-in-out;
@@ -92,6 +93,4 @@
     -webkit-transform: scale(2);
     -webkit-transform-origin: 0 0;
     position: absolute;
-    top: 0%;
-    left: 0%;
 }

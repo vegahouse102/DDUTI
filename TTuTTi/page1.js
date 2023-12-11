@@ -147,7 +147,7 @@ function settings_Page()
     const imgElement = document.createElement('img');
     imgElement.src = img_flour;
     preface.appendChild(imgElement);
-    imgElement.style.height = '22%';
+    imgElement.style.height = '20%';
     imgElement.style.width = 'auto';
 
     infor.style.textAlign = 'center';
@@ -158,7 +158,7 @@ function settings_Page()
     minipage.innerHTML = extraText('김태훈 글 &nbsp&nbsp&nbsp박선향 그림 &nbsp&nbsp&nbsp로드스쿨 제작');
 
     preface.style.marginTop = '7.5%';
-    preface.style.paddingBottom = '5%';
+    preface.style.paddingBottom = '3%';
     preface.style.alignItems = 'center';
     preface.style.flexDirection = 'column';
     preface.style.display = 'flex';
@@ -202,7 +202,7 @@ function settings_Page()
     minipage.style.top = '90%';
     minipage.style.left = '50%';
     preface.style.marginLeft = '6%';
-    preface.style.marginTop = '13%'
+    preface.style.marginTop = '15%'
     infor.style.marginLeft = '6%';
     infor.style.marginTop = '3%';
 
@@ -218,7 +218,7 @@ function settings_Page()
     minipage.style.position = 'absolute';
     minipage.style.top = '90%';
     minipage.style.left = '50%';
-    preface.style.marginTop = '7%';
+    preface.style.marginTop = '9%';
     preface.style.marginLeft = '6%';
     infor.style.marginTop = '4%';
     infor.style.marginLeft = '6%';
@@ -253,7 +253,7 @@ function settings_Page()
     minipage.style.top = '90%';
     minipage.style.left = '50%';
     preface.style.marginLeft = '6%';
-    preface.style.marginTop = '8%';
+    preface.style.marginTop = '10%';
     infor.style.marginLeft = '6%';
     infor.style.marginTop = '3%';
 
@@ -270,7 +270,7 @@ function settings_Page()
     minipage.style.top = '90%';
     minipage.style.left = '50%';
     preface.style.marginLeft = '6%';
-    preface.style.marginTop = '4%';
+    preface.style.marginTop = '6%';
     infor.style.marginLeft = '6%';
     infor.style.marginTop = '3%';
 
@@ -287,7 +287,7 @@ function settings_Page()
     minipage.style.top = '90%';
     minipage.style.left = '50%';
     preface.style.marginLeft = '6%';
-    preface.style.marginTop = '10%';
+    preface.style.marginTop = '12%';
     infor.style.marginLeft = '6%';
     infor.style.marginTop = '3%';
 
@@ -304,7 +304,7 @@ function settings_Page()
     minipage.style.top = '90%';
     minipage.style.left = '50%';
     preface.style.marginLeft = '6%';
-    preface.style.marginTop = '6%';
+    preface.style.marginTop = '8%';
     infor.style.marginLeft = '6%';
     infor.style.marginTop = '3%';
 
@@ -321,7 +321,7 @@ function settings_Page()
     minipage.style.top = '90%';
     minipage.style.left = '50%';
     preface.style.marginLeft = '6%';
-    preface.style.marginTop = '9%';
+    preface.style.marginTop = '11%';
     infor.style.marginLeft = '6%';
     infor.style.marginTop = '3%';
 
@@ -338,7 +338,7 @@ function settings_Page()
     minipage.style.top = '90%';
     minipage.style.left = '50%';
     preface.style.marginLeft = '6%';
-    preface.style.marginTop = '8%';
+    preface.style.marginTop = '10%';
     infor.style.marginLeft = '6%';
     infor.style.marginTop = '3%';
 
@@ -355,7 +355,7 @@ function settings_Page()
     minipage.style.top = '90%';
     minipage.style.left = '50%';
     preface.style.marginLeft = '6%';
-    preface.style.marginTop = '12%';
+    preface.style.marginTop = '14%';
     infor.style.marginLeft = '6%';
     infor.style.marginTop = '3%';
 
@@ -372,7 +372,7 @@ function settings_Page()
     minipage.style.top = '90%';
     minipage.style.left = '50%';
     preface.style.marginLeft = '6%';
-    preface.style.marginTop = '11%';
+    preface.style.marginTop = '13%';
     infor.style.marginLeft = '6%';
     infor.style.marginTop = '3%';
 
@@ -389,7 +389,7 @@ function settings_Page()
     minipage.style.top = '90%';
     minipage.style.left = '50%';
     preface.style.marginLeft = '6%';
-    preface.style.marginTop = '8%';
+    preface.style.marginTop = '10%';
     infor.style.marginLeft = '6%';
     infor.style.marginTop = '3%';
 
@@ -406,7 +406,7 @@ function settings_Page()
     minipage.style.top = '90%';
     minipage.style.left = '50%';
     preface.style.marginLeft = '6%';
-    preface.style.marginTop = '11%';
+    preface.style.marginTop = '13%';
     infor.style.marginLeft = '6%';
     infor.style.marginTop = '3%';
 
@@ -423,7 +423,7 @@ function settings_Page()
     minipage.style.top = '90%';
     minipage.style.left = '50%';
     preface.style.marginLeft = '6%';
-    preface.style.marginTop = '16%';
+    preface.style.marginTop = '18%';
     infor.style.marginLeft = '6%';
     infor.style.marginTop = '3%';
 

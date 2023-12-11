@@ -117,19 +117,25 @@ function Game_Screen_Create(m_index, m_div) {
     setTimeout(() => {
         const iframe = document.createElement('iframe');
 
-        iframe.width = '50%';
-        iframe.height = '50%';
         iframe.frameBorder = '0';
         iframe.allowFullscreen = true;
         iframe.id = 'frame';
 
         // 빵 맞추기
         if (m_index == 1) {
+            iframe.width = '36%';
+            iframe.height = '50%';
             iframe.src = 'https://xd.adobe.com/embed/1c65ce91-db23-4c02-80da-0428e74525be-4936/';
+            iframe.style.left = '5%';
+            iframe.style.top = '-4%';
         }
         // 빵 구역 맞추기
         else if (m_index == 2) {
+            iframe.width = '40%';
+            iframe.height = '50%';
             iframe.src = 'https://xd.adobe.com/embed/7d6c24ec-7865-4661-98cf-8b6486d0f5bb-283f/';
+            iframe.style.left = '-7%';
+            iframe.style.top = '';
         }
 
         game_Play.appendChild(iframe);
@@ -143,7 +149,7 @@ function Game_Screen_Create(m_index, m_div) {
     // 배경 클릭 시 종료
     game_bg.addEventListener('click', function() {
         this.style.height = '0';
-        game_Play.style.top = '110%';
+        game_Play.style.top = '105%';
         
         setTimeout(() => {
             game_Screen.remove();
