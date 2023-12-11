@@ -151,7 +151,7 @@ function Video_Setting(m_video) {
     m_video.style.width = '85%';
     m_video.style.height = '55%';
     m_video.style.left = '0%';
-    m_video.style.top = '17%';
+    m_video.style.top = '45%';
 
     m_video.style.left = '100%';
     m_video.style.transition = 'left 2.0s ease-in-out';
