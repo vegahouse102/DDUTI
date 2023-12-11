@@ -16,7 +16,7 @@ let video_Array_Count = 0;
 function page2_Call() {
     setTimeout(() => {
         page2_Window_Create();
-    }, 5000);
+    }, 3500);
 }
 
 
@@ -162,6 +162,6 @@ function Window_Fourth_Sentence(m_window) {
     const media_Sentence = document.createElement('div');
     media_Sentence.classList.add('media_Fourth_Sentence');
 
-    media_Sentence.innerHTML = '성심당 창업 60주년 기념 전시';
+    media_Sentence.innerHTML = '다양한 풍미를 만나는, 눈과 입이 즐거운 빵들';
     m_window.appendChild(media_Sentence);
 }

@@ -1,0 +1,95 @@
+.page4 {
+    position: absolute;
+    text-align: center;
+}
+
+.page4_class {
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    text-align: center;
+    position: absolute;
+    z-index: 4;
+}
+
+.page4_Text_1 {
+    text-align: center;
+    font-family: 'OTFPro1';
+    font-size: 3.0vw;
+    padding-top: 16vh;
+    font-weight: bold;
+}
+
+.page4_Text_2 {
+    text-align: center;
+    font-family: 'OTFPro2';
+    font-size: 2.0vw;
+    padding-top: 3vh;
+    color: #A36B1D;
+}
+
+.page4_Text_3 {
+    text-align: center;
+    font-family: 'OTFPro2';
+    font-size: 1.7vw;
+    padding-top: 6vh;
+}
+
+.page4_Image_Group {
+    width: 64vw;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 9vh;
+    margin-left: 22vw;
+}
+
+.page4_Image_Group img {
+    width: 50%;
+    height: 100%;
+    padding-right: 8vw;
+}
+
+.page4_Game_Screen {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10;
+    top: 0;
+    left: 0;
+}
+
+.page4_Game_Background {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    transition: height 1s ease-in-out;
+}
+
+.page4_Game_Play {
+    position: absolute;
+    top: 105vh;
+    left: 12.5vw;
+    width: 75vw;
+    height: 90vh;
+    background-image: url('../imageFile/background.jpg');
+    z-index: 15;
+    transition: top 1s ease-in-out;
+}
+
+#frame {
+    -ms-zoom: 2;
+    -moz-transform: scale(2);
+    -moz-transform-origin: 0 0;
+    -o-transform: scale(2);
+    -o-transform-origin: 0 0;
+    -webkit-transform: scale(2);
+    -webkit-transform-origin: 0 0;
+    position: absolute;
+    top: -14vh;
+    left: 8vw;
+}

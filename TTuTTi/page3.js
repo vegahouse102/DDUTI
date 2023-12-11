@@ -7,9 +7,7 @@ const image_path = {
 
 
 function page3_Call() {
-    setTimeout(() => {
-        page3_Create();
-    }, 400);
+    page3_Create();
 }
 
 
@@ -39,7 +37,7 @@ function page3_Create() {
             page3_Div.remove();
         }, 2000);
 
-        page_count = 1;
+        page_count = 4;
         watch_Count_Page();
     }, 7000);
 }
