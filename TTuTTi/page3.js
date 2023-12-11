@@ -17,10 +17,10 @@ function page3_Create() {
     const page3_Div = document.createElement('div');
     page3_Div.classList.add('QR_class');
 
-    page3_Div.style.left = '100vw';
+    page3_Div.style.left = '100%';
     setTimeout(() => {
         page3_Div.style.transition = 'left 2.0s ease-in-out';
-        page3_Div.style.left = '0vw';
+        page3_Div.style.left = '0%';
     }, 100);
 
     page3_Text1(page3_Div);
@@ -32,7 +32,7 @@ function page3_Create() {
     contentDiv_3.appendChild(page3_Div);
 
     setTimeout(() => {
-        page3_Div.style.left = '-100vw';
+        page3_Div.style.left = '-100%';
         setTimeout(() => {
             page3_Div.remove();
         }, 2000);

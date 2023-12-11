@@ -21,10 +21,10 @@ function Page4_Create() {
     const page4_Div = document.createElement('div');
     page4_Div.classList.add('page4_class');
 
-    page4_Div.style.left = '100vw';
+    page4_Div.style.left = '100%';
     setTimeout(() => {
         page4_Div.style.transition = 'left 2.0s ease-in-out';
-        page4_Div.style.left = '0vw';
+        page4_Div.style.left = '0%';
     }, 100);
 
     Page4_Text_Vol_1(page4_Div);
@@ -110,15 +110,15 @@ function Game_Screen_Create(m_index, m_div) {
     game_Play.classList.add('page4_Game_Play');
     game_Screen.appendChild(game_Play);
     setTimeout(() => {
-        game_Play.style.top = '5vh';
+        game_Play.style.top = '5%';
     }, 100);
 
     // 게임 플레이 진행
     setTimeout(() => {
         const iframe = document.createElement('iframe');
 
-        iframe.width = '550vw';
-        iframe.height = '550vh';
+        iframe.width = '50%';
+        iframe.height = '50%';
         iframe.frameBorder = '0';
         iframe.allowFullscreen = true;
         iframe.id = 'frame';
@@ -137,13 +137,13 @@ function Game_Screen_Create(m_index, m_div) {
 
     // 1초 후에 크기를 변경하여 위로 올라가는 애니메이션 효과 (배경)
     setTimeout(function() {
-        game_bg.style.height = '100vh';
+        game_bg.style.height = '100%';
     }, 100);
 
     // 배경 클릭 시 종료
     game_bg.addEventListener('click', function() {
         this.style.height = '0';
-        game_Play.style.top = '110vh';
+        game_Play.style.top = '110%';
         
         setTimeout(() => {
             game_Screen.remove();
@@ -160,7 +160,7 @@ function Game_Screen_Create(m_index, m_div) {
 // 다음 페이지 시간 활성화
 function Next_Page_TimeSet(m_div) {
     time_Set = setTimeout(() => {
-        m_div.style.left = '-100vw';
+        m_div.style.left = '-100%';
         content_body.style.backgroundImage = body_Background.BACKGROUND;
         setTimeout(() => {
             m_div.remove();
