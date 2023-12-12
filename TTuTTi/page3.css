@@ -39,14 +39,14 @@
     position: absolute;
     width: 20%;
     height: 6%;
-    top: 60%;
+    top: 64%;
     left: 62%;
 }
 
 .page3_Image_2 img {
     width: 100%;
     height: 100%;
-    transform: rotate(190deg);
+    transform: rotate(200deg);
 }
 
 .page3_Image_3 {
@@ -61,5 +61,5 @@
     width: 15%;
     height: 48%;
     left: 82%;
-    top: 90%;
+    top: 96%;
 }

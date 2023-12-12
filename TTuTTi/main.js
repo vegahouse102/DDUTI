@@ -34,17 +34,3 @@ function watch_Count_Page() {
 }
 
 watch_Count_Page();
-
-document.addEventListener('wheel', function(event) {
-    // wheel 이벤트 발생 시 실행되는 함수
-    if (event.ctrlKey) {
-        // Ctrl 키가 눌린 상태에서 휠을 움직일 때
-        if (event.deltaY > 0) {
-            console.log('Ctrl + 휠을 아래로 스크롤했습니다.');
-            // 여기에 원하는 동작을 추가할 수 있습니다.
-        } else if (event.deltaY < 0) {
-            console.log('Ctrl + 휠을 위로 스크롤했습니다.');
-            // 여기에 원하는 동작을 추가할 수 있습니다.
-        }
-    }
-});
