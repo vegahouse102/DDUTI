@@ -167,6 +167,7 @@ function Game_Screen_Create(m_index, m_div) {
 function Next_Page_TimeSet(m_div) {
     time_Set = setTimeout(() => {
         m_div.style.left = '-100%';
+        content_body.style.backgroundImage = 'none';
         setTimeout(() => {
             m_div.remove();
             page_count = 3;
