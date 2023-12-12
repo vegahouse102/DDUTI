@@ -79,18 +79,19 @@
     width: 85%;
     height: 90%;
     border-radius: 4%;
-    background-image:  url('../imageFile/background.jpg');
+    background-image: none;
+    background-color: rgba(0,0,0,0);
     z-index: 15;
     transition: top 1s ease-in-out;
 }
 
 #frame {
-    -ms-zoom: 2;
-    -moz-transform: scale(2);
+    -ms-zoom: 3;
+    -moz-transform: scale(3);
     -moz-transform-origin: 0 0;
-    -o-transform: scale(2);
+    -o-transform: scale(3);
     -o-transform-origin: 0 0;
-    -webkit-transform: scale(2);
+    -webkit-transform: scale(3);
     -webkit-transform-origin: 0 0;
     position: absolute;
 }
