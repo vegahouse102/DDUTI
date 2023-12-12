@@ -1,0 +1,45 @@
+.other_menu {
+    padding: 5vw;
+}
+
+.other_menu_name {
+    padding-bottom: 4vw;
+    width: 100%;
+}
+.other_menu_name_text {
+    font-family: 'OTRPro2';
+    font-weight: bold;
+    color: #BD8A00;
+    font-size: 15pt;
+    margin-top: -4vw;
+    margin-bottom: 2.4vw;;
+    padding: 0;
+}
+
+.other_menu_images {
+    margin-bottom: 1.5rem;
+    overflow: scroll;
+    display: flex;
+}
+
+.other_menu_images::-webkit-scrollbar {  /* 스크롤바 없애기 */
+    display: none;
+}
+
+.other_menu_array {
+    display: flex;
+    transition: transform 1.5s ease;
+}
+
+.other_menu_array2 {
+    display: flex;
+    transition: transform 1.5s ease;
+}
+
+.other_menu_images img {
+    max-width: 50%;
+    width: 50%;
+    aspect-ratio: 1/1;
+    border: 2px solid rgba(0,0,0,0.2);
+    box-sizing: border-box;
+}
