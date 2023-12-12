@@ -79,7 +79,7 @@
     width: 85%;
     height: 90%;
     border-radius: 4%;
-    background-image: url('../imageFile/background.jpg');
+    background-image:  url('../imageFile/background.jpg');
     z-index: 15;
     transition: top 1s ease-in-out;
 }

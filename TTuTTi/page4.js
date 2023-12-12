@@ -11,7 +11,7 @@ var time_Set;
 function page4_Call() {
     setTimeout(() => {
         Page4_Create();
-    }, 1500);
+    }, 4000);
 }
 
 
@@ -123,11 +123,11 @@ function Game_Screen_Create(m_index, m_div) {
 
         // 빵 맞추기
         if (m_index == 1) {
-            iframe.width = '36%';
-            iframe.height = '50%';
+            iframe.width = '33%';
+            iframe.height = '55.5%';
             iframe.src = 'https://xd.adobe.com/embed/1c65ce91-db23-4c02-80da-0428e74525be-4936/';
-            iframe.style.left = '13.5%';
-            iframe.style.top = '0%';
+            iframe.style.left = '16%';
+            iframe.style.top = '-5.5%';
         }
         // 빵 구역 맞추기
         else if (m_index == 2) {
@@ -167,10 +167,9 @@ function Game_Screen_Create(m_index, m_div) {
 function Next_Page_TimeSet(m_div) {
     time_Set = setTimeout(() => {
         m_div.style.left = '-100%';
-        content_body.style.backgroundImage = body_Background.BACKGROUND;
         setTimeout(() => {
             m_div.remove();
-            page_count = 1;
+            page_count = 3;
             watch_Count_Page();
         }, 2500);
     }, 10000);

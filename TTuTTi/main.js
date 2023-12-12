@@ -21,15 +21,14 @@ function watch_Count_Page() {
         page1_Call();
     }
     if (page_count == 2) {
-        page2_Call();
+        page4_Call();
     }
     if (page_count == 3) {
         content_body.style.backgroundImage = 'none';
         page3_Call();
     }
     if (page_count == 4) {
-        content_body.style.backgroundImage = 'none';
-        page4_Call();
+        page2_Call();
     }
 }
 

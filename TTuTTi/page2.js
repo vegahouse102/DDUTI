@@ -16,7 +16,7 @@ let video_Array_Count = 0;
 function page2_Call() {
     setTimeout(() => {
         page2_Window_Create();
-    }, 3500);
+    }, 1000);
 }
 
 
@@ -76,10 +76,11 @@ function playNextVideo(m_media_Window) {
       else {
         setTimeout(() => {
             m_media_Window.style.left = '-100%';
+            content_body.style.backgroundImage = body_Background.BACKGROUND;
             setTimeout(() => {
                 m_media_Window.remove();
                 video_Array.length = 0;
-                page_count = 3;
+                page_count = 1;
                 watch_Count_Page();
                 video_Array_Count = 0;
             }, 2200);
