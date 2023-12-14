@@ -173,7 +173,7 @@ function Next_Page_TimeSet(m_div) {
             page_count = 3;
             watch_Count_Page();
         }, 1600);
-    }, 6000);
+    }, 5000);
 }
 
 // 페이지 종료

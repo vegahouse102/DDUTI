@@ -85,7 +85,7 @@ function page3_Image2(m_div) {
 
     const text2_1 = document.createElement('div');
     text2_1.classList.add('page3_Text_2');
-    text2_1.innerHTML = '영상보기';
+    text2_1.innerHTML = '역사보기';
     page3_class[0].appendChild(text2_1);
 
     text2_1.addEventListener('click', function() {
@@ -95,8 +95,9 @@ function page3_Image2(m_div) {
         m_div.style.left = '-100%';
         setTimeout(() => {
             m_div.remove();
-            page_count = 4;
+            page_count = 1;
             watch_Count_Page();
+            content_body.style.backgroundImage = body_Background.BACKGROUND;
         }, 1200);
     });
 
