@@ -11,7 +11,7 @@ var time_Set;
 function page4_Call() {
     setTimeout(() => {
         Page4_Create();
-    }, 4000);
+    }, 1000);
 }
 
 

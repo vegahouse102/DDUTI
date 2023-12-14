@@ -5,61 +5,84 @@
 }
 
 .QR_class {
-    width: 100%;
-    height: 100%;
+    width: 90%;
+    height: 90%;
     background-color: white;
     text-align: center;
     position: absolute;
+    margin-top: 2.5%;
+    margin-left: 5%;
+    background-image: url('../imageFile/background.jpg');
+    box-shadow: 8px 8px 4px rgba(0, 0, 0, 0.3); /* 그림자 설정 */
 }
 
 .page3_Text_1 {
     text-align: center;
     font-family: 'OTFPro1';
-    font-size: 2.6vw;
-    padding-top: 6%;
+    font-size: 3.2vw;
+    padding-top: 8.0%;
     font-weight: bold;
 }
 
 .page3_Text_2 {
     text-align: center;
-    font-family: 'OTFPro2';
-    font-size: 1.9vw;
-    padding-top: 3%;
-    color: #A36B1D;
+    font-family: 'NotoSansKR-Black';
+    font-size: 1.8vw;
+    padding: 1.5%;
+    border: 3px solid black;
+    border-radius: 10vw;
+    margin-top: -15%;
 }
 
 .page3_Image_1 {
-    padding-top: 3%;
+    padding-top: 4%;
     text-align: center;
-    width: 90%;
-    margin-left: 5%;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.page3_Image_1 img {
+    border: 11px solid #AB7A20;
+    border-radius: 18px;
+    max-width: 25%;
+    margin-top: 1%;
 }
 
 .page3_Image_2 {
     position: absolute;
-    width: 20%;
-    height: 6%;
-    top: 64%;
-    left: 62%;
+    width: 12%;
+    height: 45%;
+    flex-direction: column;
+    z-index: 10;
 }
 
 .page3_Image_2 img {
+    margin-left: -17%;
+    width: 132%;
+    height: 60%;
+}
+
+.page3_Border_Image {
     width: 100%;
     height: 100%;
-    transform: rotate(200deg);
+    position: absolute;
+    margin-top: -38%;
+}
+
+.page3_Border_Image img {
+    width: 100%;
+    height: 100%;
 }
 
 .page3_Image_3 {
     position: absolute;
-    width: 100%;
-    height: 100%;
-    top: -50%;
+    width: 10%;
+    height: auto;
+    margin-left: 45%;
+    margin-top: -2%;
 }
 
 .page3_Image_3 img {
-    position: absolute;
-    width: 15%;
-    height: 48%;
-    left: 82%;
-    top: 96%;
+    width: 100%;
+    height: 100%;
 }

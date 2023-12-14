@@ -54,9 +54,11 @@ const delete_Div = [];
 function story_scrolling()
 {
     // 2페이지 시작
-    if (scroll_index == (max_page - 2)) {
-        page_count = 2;
-        watch_Count_Page();
+    if (scroll_index == (max_page - 1)) {
+        setTimeout(() => {
+            page_count = 3;
+            watch_Count_Page();
+        }, 1000);
     }
 
     if (scroll_index == (max_page - 1)) {
