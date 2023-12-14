@@ -11,7 +11,7 @@ var time_Set;
 function page4_Call() {
     setTimeout(() => {
         Page4_Create();
-    }, 1000);
+    }, 200);
 }
 
 
@@ -23,7 +23,7 @@ function Page4_Create() {
 
     page4_Div.style.left = '100%';
     setTimeout(() => {
-        page4_Div.style.transition = 'left 2.0s ease-in-out';
+        page4_Div.style.transition = 'left 1.2s ease-in-out';
         page4_Div.style.left = '0%';
     }, 100);
 
@@ -172,8 +172,8 @@ function Next_Page_TimeSet(m_div) {
             m_div.remove();
             page_count = 3;
             watch_Count_Page();
-        }, 2500);
-    }, 10000);
+        }, 1600);
+    }, 6000);
 }
 
 // 페이지 종료

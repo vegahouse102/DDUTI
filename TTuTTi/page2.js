@@ -16,7 +16,7 @@ let video_Array_Count = 0;
 function page2_Call() {
     setTimeout(() => {
         page2_Window_Create();
-    }, 1000);
+    }, 200);
 }
 
 
@@ -37,10 +37,10 @@ function page2_Window_Create() {
 
     // Media 재생
     setTimeout(() => {
-        media_Window.style.transition = 'left 2.0s ease-in-out';
+        media_Window.style.transition = 'left 1.2s ease-in-out';
         media_Window.style.left = '0%';
         playNextVideo(media_Window);
-    }, 2200);
+    }, 200);
 }
 
 function playNextVideo(m_media_Window) {
@@ -70,7 +70,7 @@ function playNextVideo(m_media_Window) {
       if (video_Array_Count < video_Array.length) {
         setTimeout(() => {
             playNextVideo(m_media_Window);
-        }, 2000);
+        }, 1200);
       }
       // 마지막이라면 다음 페이지 불러오기
       else {
@@ -83,8 +83,8 @@ function playNextVideo(m_media_Window) {
                 page_count = 1;
                 watch_Count_Page();
                 video_Array_Count = 0;
-            }, 2200);
-        }, 2000);
+            }, 1400);
+        }, 1200);
       }
     });
 }
@@ -126,7 +126,7 @@ function Window_Third_MediaClass(m_window) {
     element_Media.classList.add('media_Detail');
 
     // video 태그 생성 및 설정
-    for (let index = 0; index < 3; index++) {
+    for (let index = 0; index < 1; index++) {
         const videoElement = document.createElement('video');
         videoElement.src = video_Link[`TV_${index + 1}`];
 
@@ -155,7 +155,7 @@ function Video_Setting(m_video) {
     m_video.style.top = '45%';
 
     m_video.style.left = '100%';
-    m_video.style.transition = 'left 2.0s ease-in-out';
+    m_video.style.transition = 'left 1.2s ease-in-out';
 }
 
 // Media창 네 번째 문구

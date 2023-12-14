@@ -12,7 +12,7 @@ const image_path = {
 function page3_Call() {
     setTimeout(() => {
         page3_Create();
-    }, 1500);
+    }, 700);
 }
 
 
@@ -24,7 +24,7 @@ function page3_Create() {
 
     page3_Div.style.left = '100%';
     setTimeout(() => {
-        page3_Div.style.transition = 'left 2.0s ease-in-out';
+        page3_Div.style.transition = 'left 1.2s ease-in-out';
         page3_Div.style.left = '0%';
     }, 100);
 
@@ -97,7 +97,7 @@ function page3_Image2(m_div) {
             m_div.remove();
             page_count = 4;
             watch_Count_Page();
-        }, 2200);
+        }, 1200);
     });
 
     // 오른쪽
@@ -118,7 +118,7 @@ function page3_Image2(m_div) {
             m_div.remove();
             page_count = 2;
             watch_Count_Page();
-        }, 2000);
+        }, 1200);
     });
 
 }

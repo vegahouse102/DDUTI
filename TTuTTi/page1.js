@@ -25,7 +25,7 @@ function page1_Call() {
     class_Make();
     settings_Page();
 
-    page_1_Interaval = setInterval(story_scrolling, 4000);
+    page_1_Interaval = setInterval(story_scrolling, 3200);
 }
 
 // class 설정
@@ -84,7 +84,7 @@ function story_scrolling()
             newDiv[newDiv.length - 1].style.transform = 'translateX(0%)';
             setTimeout(() => {
                 change_Color(newDiv[newDiv.length - 1]);
-            }, 2000);
+            }, 1200);
         }
         delete_Div.push(dele_div);
 
@@ -101,7 +101,7 @@ function class_initial(temporary_div)
     temporary_div.style.backgroundColor = 'rgba(0, 0, 0, 0)';
     temporary_div.style.position = 'absolute';
     temporary_div.style.transform = 'translateX(100%)';
-    temporary_div.style.transition = 'transform 2.0s ease-in-out';
+    temporary_div.style.transition = 'transform 1.2s ease-in-out';
     temporary_div.style.backgroundSize = '60% 100%';
     temporary_div.style.backgroundRepeat = 'no-repeat';
     temporary_div.style.backgroundPosition = 'right top';
